@@ -1,13 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <p>hello binod</p>
-    <input id="name" size="10px">
-</body>
-</html>
+    <title> Programmed by binod </title>
+    <script type="text/javascript">
+    function myFunc() { document .getElementById("demo").innerHTML = "Tap Binod to Reset";}</script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://downloads.minepi.com/sdk/v1/prod.js"></script>
+    <style type="text/css">
+    div {
+        height: 200px;
+        line-height: 200px;
+        color: white;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    div {
+        button {
+            font-family: sans-serif;
+            border: none;
+            padding: 15px 30px;
+            font-size: 20px;
+            outline: none;
+            margin: 10px;
+        }
+        #btn {
+            background-color: rgb(23, 52, 89);
+            color: #f8f9f9;
+            box-shadow: .5px .5px 1px 2px #0000000;
+        }
+        }
+    </style>
+    </head>
+    <body>
+        <div onclick="changeColor(this)" style="background-color: red;">
+       <h1 id="demo" type="text" onclick="myFunc()"> Tap Manas to Change color !</h1>
+       
+    </div>
+        <script>
+            function changeColor(element) {
+                var currentColor = element.style.backgroundColor;
+                if (currentColor == "red") {element.style.backgroundColor = "green";
+            } else {element.style.backgroundColor = "red";
+        }
+            }
+        </script> <br/>  <br/>
+     
+        
+        <table border="2">
+            <tr>
+                <td>Name</td>
+                <td>Age</td>
+                <td>Score</td>
+            </tr>
+            <tr>
+                <td><em>Krish</em></td>
+                <td>20</td>
+                <td>385</td>
+            </tr>
+            <tr>
+                <td><em>Spider</em></td>
+                <td>26</td>
+                <td>345</td>
+            </tr>
+            <tr>
+                <td><em>Ironman</em></td>
+                <td>22</td>
+                <td>391</td>
+            </tr>
+        </table> <br/>
+        <form>
+            Name  : <input type="text" placeholder="Enter name"/> <br/> <br/>
+            Age   : <input type="text" placeholder="Enter Age"/> <br/> <br/>
+            Gender: <input type="radio" name="gender"/> Male
+                    <input type="radio" name="gender"/> Female <br/>
+            <p>Interest</p>    <br/>
+            <input type="checkbox"/> Cricket <br/>
+            <input type="checkbox"/> Football <br/>
+            <input type="checkbox"/> Chess <br/>
+            <p> Favourite Game</p> <select>
+                                      <option>Cricket</option>
+                                      <option>Football</option>
+                                      <option>Chess</option>
+            </select>
+            <a href="http://livetelecast.online/flappybird/index.html">Play a Game</a>
+            </form> <br/>
+            <input type="button" value="Fill Your Address"/> <br/>
+            <textarea cols="30" rows="10"></textarea> <br/> <br/> <br/>
+            <style type="text/css"> #color-name {color: beige;} </style>
+            <input type="checkbox"/> <p id="color-name">Terms and condition</p>  <br/>
+            <p> You agree that if your Application Form is incomplete, incomprehensible and/or incorrectly submitted the it may not be considered.</p>
+            <div> 
+            <button id="btn"> Submit </button>
+        <script type="text/javascript">
+        document.getElementById("btn").onclick = function() {
+            alert(" Form submitted successfully")
+        }
+        </script> 
+        </div>
+    </body>
+    </html>
