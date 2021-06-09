@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+   html, body{ 
+        font: 14px sans-serif;
+        width: 100%;
+           
+    }
+    .container {
+        margin: auto;
+        height: 600px;
+        max-width: max-content;
+        content: "";
+        display: block;
+        clear: both;   
+    }
+    .container > div {
+        width: 33.3%;
+        text-align: center;
+        float: left;
+        border-right: 1px solid black;
+        background: lightgray;
+    }
+    .rap2 {
+        overflow-y: hidden;    
+        height: 540px;
+        margin-right: 20px;
+        margin-left: 0px;
+        width: 33.3%;
+    }
+    .wrapper{
+        border-radius: 10px;
+        width: 33.3%;
+        padding: 20px;
+    background-color: lightblue;
+    border-style: solid;}
+    .form-group {
+        
+        background-color:steelblue ;
+    }
+    #p1 {
+        color: steelblue ;
+    }
