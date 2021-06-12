@@ -1,11 +1,11 @@
 * {
     box-sizing: border-box;
 }
-   html, body{ 
-        font: 14px sans-serif;
-        width: 100%;
-        background: linear-gradient(0.25turn, rgb(113, 57, 116), rgb(101, 129, 187)); color: rgb(230, 146, 21);
-    }
+html, body{ 
+    font: 14px sans-serif;
+    width: 100%;
+    background: linear-gradient(0.25turn, rgb(113, 57, 116), rgb(101, 129, 187)); color: rgb(230, 146, 21);
+}
     .container {
         margin: auto;
         height: 600px;
@@ -15,11 +15,11 @@
         clear: both;   
     }
     .container > div {
-        width: 33.3%;
         
+        font-size: 22px;
         float: left;
-        border-right: 1px solid black;
-        background: lightgray;
+        border-right: 1px solid rgb(210, 245, 113);
+        background: rgba(58, 58, 58, 0.226);
     }
     .rap2 {
         overflow-y: hidden;    
@@ -34,10 +34,8 @@
         padding: 20px;
     background-color: lightblue;
     border-style: solid;}
-    .form-group {
-        
-        background-color:steelblue ;
-    }
+    
     #p1 {
         color: steelblue ;
     }
+    
