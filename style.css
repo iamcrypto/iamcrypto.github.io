@@ -4,7 +4,7 @@
    html, body{ 
         font: 14px sans-serif;
         width: 100%;
-        background: linear-gradient(0.25turn, rgb(113, 57, 116), rgb(101, 129, 187)); color: rgb(184, 140, 73);
+        background: linear-gradient(0.25turn, rgb(113, 57, 116), rgb(101, 129, 187)); color: rgb(230, 146, 21);
     }
     .container {
         margin: auto;
@@ -16,7 +16,7 @@
     }
     .container > div {
         width: 33.3%;
-        text-align: center;
+        
         float: left;
         border-right: 1px solid black;
         background: lightgray;
