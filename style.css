@@ -1,6 +1,4 @@
-* {
-    box-sizing: border-box;
-}
+
 html, body{ 
     font: 14px sans-serif;
     width: 100%;
@@ -10,9 +8,9 @@ html, body{
         margin: auto;
         height: 600px;
         max-width: max-content;
-        content: "";
-        display: block;
-        clear: both;   
+        display: flex;
+        
+          
     }
     .container > div {
         
@@ -28,7 +26,7 @@ html, body{
         margin-left: 0px;
         width: 33.3%;
     }
-    .wrapper{
+    .wrapper{ 
         border-radius: 10px;
         width: 33.3%;
         padding: 20px;
@@ -38,4 +36,14 @@ html, body{
     #p1 {
         color: steelblue ;
     }
-    
+    @media only screen and (max-width:488px){
+        .container{
+            flex-direction: column;
+        }
+        .wrapper{
+            width: max-content;
+        }
+        .rap2{
+            width: 100%;
+        }
+    }
