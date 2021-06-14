@@ -45,11 +45,11 @@ html, body{
             
         }
         .rap2{
-            width: 100%;
+            width: max-content;
              max-height: max-content;
         }
         .puff{
             max-height: fit-content;
-            
+            max-width: fit-content;
         }
     }
