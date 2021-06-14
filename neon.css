@@ -4,6 +4,7 @@
     position: relative;
     display: flex;
     height: 60px;
+    width: fit-content;
     border-radius: 10px;
     border-style: dotted;
     margin-left: 50px;
