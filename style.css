@@ -6,10 +6,10 @@ html, body{
 }
     .container {
         margin: auto;
-        height: 600px;
+         
         max-width: max-content;
         display: flex;
-        
+        max-height: max-content;
           
     }
     .container > div {
@@ -42,8 +42,14 @@ html, body{
         }
         .wrapper{
             width: max-content;
+            
         }
         .rap2{
             width: 100%;
+             max-height: max-content;
+        }
+        .puff{
+            max-height: fit-content;
+            
         }
     }
