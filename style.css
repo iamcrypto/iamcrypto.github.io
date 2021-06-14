@@ -8,7 +8,7 @@ html, body{
         margin: auto;
          
         max-width: max-content;
-        display: flex;
+        display: block;
         max-height: max-content;
           
     }
@@ -41,7 +41,7 @@ html, body{
             flex-direction: column;
         }
         .wrapper{
-            width: max-content;
+            width: 100%;
             
         }
         .rap2{
