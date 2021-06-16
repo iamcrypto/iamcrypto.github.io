@@ -8,7 +8,7 @@ html, body{
         margin: auto;
          
         max-width: max-content;
-        display: block;
+        display: flex;
         max-height: max-content;
           
     }
