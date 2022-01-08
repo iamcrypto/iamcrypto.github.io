@@ -1076,7 +1076,7 @@ audio {
 }
 
 .balloons {
-	position: fixed;
+	position: relative;
 	bottom: -200px;
 	opacity: 0.6;
 	z-index: 99;
