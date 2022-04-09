@@ -1,12 +1,16 @@
 <!DOCTYPE html>
-<html>
-	<head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Happy Birthday</title>
+<!--[if lt IE 7]> <html class="ie lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="ie lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html class="ie lt-ie9"> <![endif]-->
+<!--[if gt IE 8]> <html> <![endif]-->
+<!--[if !IE]><!--><html lang="en"><!-- <![endif]-->
+<head>
+	<title>Happy Birthday</title>
+	<meta charset="UTF-8" />
+	<meta name="description" content="Happy Birthday Xola">
 	<meta name="robots" content="index, follow" />
 	<link rel="author" href="https://plus.google.com/u/1/+AyushSharma1/" /> 
-   
+    <meta name="keywords" content="Birthday, Happy">
     <!-- Strat of Facebook Meta -->
     <meta property="og:type" content="E-Greeting" />
     <meta property="og:image" content="favicon.ico" />
@@ -20,95 +24,13 @@
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<link rel="stylesheet" type="text/css" href="loading.css">
 	<link href='http://fonts.googleapis.com/css?family=Signika' rel='stylesheet' type='text/css'>
-	
+	<!-- <link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'> -->
 	<link rel="stylesheet/less" href="cake.less">
 	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.1.0/less.min.js"></script>
-	<!-- <link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'> -->
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, user-scalable=yes">
-        
-        <!-- ios support -->
-        <meta name="apple-mobile-web-app-status-bar" content="#db4938" />
-        <meta name="theme-color" content="#db4938" />
-        
-        <meta name="application-name" content="Happy Birthday">
-        
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-        
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-      
-        <script src="https://sdk.minepi.com/pi-sdk.js"></script>
+</head>
 
-        <script type="text/javascript">
-            $( document ).ready(function() {
-                const Pi = window.Pi;
-                Pi.init({ version: "2.0" });
-                
-                async function auth() {
-                    try {
-                        // Identify the user with their username / unique network-wide ID, and get permission to request payments from them.
-                        const scopes = ['username', 'payments'];
-                        function onIncompletePaymentFound(payment) {
-                            
-                        }; // Read more about this in the SDK reference
-
-                        Pi.authenticate(scopes, onIncompletePaymentFound).then(function(auth) {
-                            $("#username").html(" " + auth.user.username);
-                        }).catch(function(error) {
-                            //Pi.openShareDialog("Error", error);
-                            //alert(err);
-                            console.error(error);
-                        });
-                    } catch (err) {
-                        //Pi.openShareDialog("Error", err);
-                        //alert(err);
-                        console.error(err);
-                        // Not able to fetch the user
-                    }
-                }
-                
-                auth();
-                
-                const shareData = {
-                    title: 'LatinChain Platform',
-                    text: 'Hi. Check it out this Pi App: LatinChain Platform (Pi Network Games from Latin America). Try it in Pi Browser. #PiNetwork #PiApps https://latin-chain.com/',
-                    //url: 'https://latin-chain.com/',
-                }
-
-                //$("#social_div").css("visibility", "visible");
-                const btn = document.querySelector('#button1');
-                //const resultPara = document.querySelector('.result');
-                
-                // Must be triggered some kind of "user activation"
-                btn.addEventListener('click', async () => {
-                    if (!navigator.share) {
-                        Pi.openShareDialog(shareData.title, shareData.text);
-                    }else
-                    {
-                      try {
-                        await navigator.share(shareData);
-                        //resultPara.textContent = 'MDN shared successfully'
-                      } catch(err) {
-                        //alert('Error: ' + err);
-                      }
-                    }
-                });
-                
-                $( "#vote" ).click(function() {
-                    $.colorbox({href:"https://latin-chain.com/modals/vote_pi.html", iframe:true, width: "80%", height: "80%", maxWidth: "80%", maxHeight: "80%"});
-                });
-            });
-
-        </script>
-	</head>
-	<body>
- 		
-        
-       
-		
-		<div class="loading"></div>
+<body>
+	<div class="loading"></div>
 	<audio class="song" controls loop>
         <source src="hbd.mp3"></source>
 	   Your browser isn't invited for super fun audio time.
@@ -120,16 +42,16 @@
     	<h2 style="color:#0719D4;">B</h2>
     </div>
 	<div class="balloons text-center" id="b3">
-    	<h2 style="color:#D14D39;">L</h2>
+    	<h2 style="color:#D14D39;">D</h2>
     </div>
 	<div class="balloons text-center" id="b4">
-    	<h2 style="color:#8FAD00;">I</h2>
+    	<h2 style="color:#8FAD00;">X</h2>
     </div>
 	<div class="balloons text-center" id="b5">
-    	<h2 style="color:#8377E4;">V</h2>
+    	<h2 style="color:#8377E4;">O</h2>
     </div>
     <div class="balloons text-center" id="b6">
-    	<h2 style="color:#99C96A;">E</h2>
+    	<h2 style="color:#99C96A;">L</h2>
     </div>
     <div class="balloons text-center" id="b7">
     	<h2 style="color:#20CFB4;">A</h2>
@@ -183,10 +105,52 @@
 		<div class="row message">
 			<div class="col-md-12">
 				<p>Today is...</p>
-				<p>Today is...</p>
-				<p>Today is...</p>
-				<p>Today is...</p>
-				
+				<p>as beautiful as other days</p>
+				<p>but you realize</p>
+				<p>another year has gone</p>
+				<p>in a blink of the eyes</p>
+				<p><strong>however</strong></p>
+				<p>Do you know..?</p>
+				<p>today is just special</p>
+				<p>so special to you</p>
+				<p>that's why</p>
+				<p>Let's make it...</p>
+				<p>the best celebration ever</p>
+				<p>and let me share...</p>
+				<p>a piece of happiness to you</p>
+				<p>I made all this...</p>
+				<p>as a birthday present to you</p>
+				<p>thanks for being there</p>
+				<p>thanks for the friendship we made</p>
+				<p>thanks for everything</p>
+				<p>I wish you all the best</p>
+				<p>May your life be at ease</p>
+				<p>May all your wishes come true</p>
+				<p>Remember</p>
+				<p>your ambitions</p>
+				<p>you live as a free bird...</p>
+				<p>flying in the blue sky</p>
+				<p>Now things are different...</p>
+				<p>real story of your life</p>
+				<p>is just about to begin</p>
+				<p>indeed..</p>
+				<p>but...</p>
+				<p>don't worry</p>
+				<p>because...</p>
+				<p>God has your back</p>
+				<p>and</p>
+				<p>this year will be better</p>
+				<p>and I hope</p>
+				<p>you'll find...</p>
+				<p>happiness along the way</p>
+				<p>keep your spirit up</p>
+				<p>enjoy every single moment...</p>
+				<p>that you experience today</p>
+				<p>fill it with your most beautiful smile</p>
+				<p>and make it the best memory..</p>
+				<p>lastly...</p>
+				<p>I'd like to wish you one more time</p>
+				<p>a very happy birthday Xola Mathembisa</p>
 			</div>
 		</div>
 		<div class="navbar navbar-fixed-bottom">
@@ -203,13 +167,22 @@
 					<!-- <button class="btn btn-primary" id="cake_cut">Lrt's Cut the Cake</button> -->
 				</div>
 			</div>
-			 
+			<!-- <div class="col-md-2">
+			</div>
+			<div class="col-md-2">
+			</div>
+			<div class="col-md-2">
+			</div>
+			<div class="col-md-2">
+			</div>
+			<div class="col-md-2">
+			</div> -->
 		</div>
 
 
 	</div>
-	</body>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 <script src="effect.js"></script>
 <script>
