@@ -27,6 +27,70 @@
 	<!-- <link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'> -->
 	<link rel="stylesheet/less" href="cake.less">
 	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.1.0/less.min.js"></script>
+	
+	 <script src="https://sdk.minepi.com/pi-sdk.js"></script>
+
+        <script type="text/javascript">
+            $( document ).ready(function() {
+                const Pi = window.Pi;
+                Pi.init({ version: "2.0" });
+                
+                async function auth() {
+                    try {
+                        // Identify the user with their username / unique network-wide ID, and get permission to request payments from them.
+                        const scopes = ['username', 'payments'];
+                        function onIncompletePaymentFound(payment) {
+                            
+                        }; // Read more about this in the SDK reference
+
+                        Pi.authenticate(scopes, onIncompletePaymentFound).then(function(auth) {
+                            $("#username").html(" " + auth.user.username);
+                        }).catch(function(error) {
+                            //Pi.openShareDialog("Error", error);
+                            //alert(err);
+                            console.error(error);
+                        });
+                    } catch (err) {
+                        //Pi.openShareDialog("Error", err);
+                        //alert(err);
+                        console.error(err);
+                        // Not able to fetch the user
+                    }
+                }
+                
+                auth();
+                
+                const shareData = {
+                    title: 'LatinChain Platform',
+                    text: 'Hi. Check it out this Pi App: LatinChain Platform (Pi Network Games from Latin America). Try it in Pi Browser. #PiNetwork #PiApps https://latin-chain.com/',
+                    //url: 'https://latin-chain.com/',
+                }
+
+                //$("#social_div").css("visibility", "visible");
+                const btn = document.querySelector('#button1');
+                //const resultPara = document.querySelector('.result');
+                
+                // Must be triggered some kind of "user activation"
+                btn.addEventListener('click', async () => {
+                    if (!navigator.share) {
+                        Pi.openShareDialog(shareData.title, shareData.text);
+                    }else
+                    {
+                      try {
+                        await navigator.share(shareData);
+                        //resultPara.textContent = 'MDN shared successfully'
+                      } catch(err) {
+                        //alert('Error: ' + err);
+                      }
+                    }
+                });
+                
+                $( "#vote" ).click(function() {
+                    $.colorbox({href:"https://latin-chain.com/modals/vote_pi.html", iframe:true, width: "80%", height: "80%", maxWidth: "80%", maxHeight: "80%"});
+                });
+            });
+
+        </script>
 </head>
 
 <body>  
@@ -38,13 +102,7 @@
            
 	</div>
 	
-	   <div class="container" style="text-align:center">
-            <br/>Hi<strong><span id="username"></span></strong>. Wish happy Birthday to Live. 
-            <br/><br/>
-            
-            
-           
-		</div>
+	  
 	<div class="loading"></div>
 	<audio class="song" controls loop>
         <source src="hbd.mp3"></source>
@@ -57,16 +115,16 @@
     	<h2 style="color:#0719D4;">B</h2>
     </div>
 	<div class="balloons text-center" id="b3">
-    	<h2 style="color:#D14D39;">D</h2>
+    	<h2 style="color:#D14D39;">L</h2>
     </div>
 	<div class="balloons text-center" id="b4">
-    	<h2 style="color:#8FAD00;">X</h2>
+    	<h2 style="color:#8FAD00;">I</h2>
     </div>
 	<div class="balloons text-center" id="b5">
-    	<h2 style="color:#8377E4;">O</h2>
+    	<h2 style="color:#8377E4;">V</h2>
     </div>
     <div class="balloons text-center" id="b6">
-    	<h2 style="color:#99C96A;">L</h2>
+    	<h2 style="color:#99C96A;">E</h2>
     </div>
     <div class="balloons text-center" id="b7">
     	<h2 style="color:#20CFB4;">A</h2>
