@@ -1250,7 +1250,7 @@ audio {
 }
 
 .balloon-border{
-	position: fixed;
+	position: relative;
 	top:100%;
 	opacity: 0.5;
 	z-index: 9999;
