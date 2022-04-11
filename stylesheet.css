@@ -1084,6 +1084,7 @@ audio {
 	height: 120px;
 	background-repeat: no-repeat no-repeat;
 	background-size: 55px 120px;
+	display: inline-grid;
 }
 .balloons h2 {
 	text-transform: uppercase;
