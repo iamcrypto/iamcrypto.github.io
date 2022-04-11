@@ -1076,7 +1076,7 @@ audio {
 }
 
 .balloons {
-	position: relative;
+	position: fixed;
 	bottom: -200px;
 	opacity: 0.6;
 	z-index: 99;
@@ -1091,7 +1091,7 @@ audio {
 	font-size: 40px;
 	color: #BF4136;
 	text-shadow: 5px 5px 5px #FFF;
-	display: inline-flex;
+	display: inline-grid;
 }
 #b1,#b11 {
 	background-image: url('b1.png');
