@@ -1078,13 +1078,13 @@ audio {
 .balloons {
 	position: fixed;
 	bottom: -200px;
-	margin: 40px 40px 40px 40px;
+	margin: 60px 60px 60px 60px;
 	opacity: 0.6;
 	z-index: 99;
 	width: 45px;
 	height: 90px;
 	background-repeat: no-repeat no-repeat;
-	background-size: 45px 90px;
+	background-size: 45px 75px;
 	display: inline-grid;
 }
 .balloons h2 {
