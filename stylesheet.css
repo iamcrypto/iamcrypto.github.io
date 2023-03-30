@@ -1082,7 +1082,7 @@ audio {
 	opacity: 0.6;
 	z-index: 99;
 	width: 80px;
-	height: 90px;
+	height: 120px;
 	background-repeat: no-repeat no-repeat;
 	background-size: 80px 120px;
 	display: inline-grid;
@@ -1090,7 +1090,7 @@ audio {
 .balloons h2 {
 	text-transform: uppercase;
 	font-family: 'Signika', sans-serif;
-	font-size: 30px;
+	font-size: 40px;
 	color: #BF4136;
 	text-shadow: 5px 5px 5px #FFF;
 	
