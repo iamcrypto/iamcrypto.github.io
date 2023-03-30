@@ -1081,10 +1081,10 @@ audio {
 	margin: 80px 80px 80px 80px;
 	opacity: 0.6;
 	z-index: 99;
-	width: 65px;
-	height: 105px;
+	width: 45px;
+	height: 90px;
 	background-repeat: no-repeat no-repeat;
-	background-size: 65px 105px;
+	background-size: 45px 90px;
 	display: inline-grid;
 }
 .balloons h2 {
