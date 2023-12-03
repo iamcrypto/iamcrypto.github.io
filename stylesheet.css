@@ -1,5 +1,6 @@
 body {
 	/*background-color: #FFDAB9;	*/
+	background-image: url('banner.png');
 	background-color: #000;
 	-webkit-transition:background-color linear 5s;
 	-moz-transition:background-color linear 5s;
