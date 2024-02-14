@@ -116,7 +116,7 @@ $(function() {
 
   function cleanUpData(patents) {
     var toRemove = [];
-    var cutoffDate = new Date(1900, 1, 1);
+    var cutoffDate = new Date(2005, 4, 16);
     for (var i = 0; i < patents.length; i++) {
       if (parseDate(patents[i]["Date"]) > cutoffDate) toRemove.push(patents[i]);
     }
@@ -184,7 +184,7 @@ $(function() {
     drawBorders();
     labelPlats(names);
     colorPlats();
-    onlyShowUpToDate("12/2/1830");
+    onlyShowUpToDate("12/2/2022");
     assignBackground();
     assignOptionFilters();
     $(".sq").click(function() {
