@@ -1,6 +1,6 @@
-Happy Birthday
+Begins here
 
-A Happy Birthday animation design in CSS3, HTML5.
+from first of november
 
 Technology Used: HTML5 CSS3 jQuery  GNU/Linux Digital Ocean as VPS GIMP
 
@@ -8,7 +8,7 @@ Technology Used: HTML5 CSS3 jQuery  GNU/Linux Digital Ocean as VPS GIMP
 
 ## If you have python installed:
 ```
-cd Birthday
+cd info @kld
 ```
 
 && 
