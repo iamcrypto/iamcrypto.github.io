@@ -184,7 +184,7 @@ $(function() {
     drawBorders();
     labelPlats(names);
     colorPlats();
-    onlyShowUpToDate("12/2/2022");
+    onlyShowUpToDate("12/2/2003");
     assignBackground();
     assignOptionFilters();
     $(".sq").click(function() {
