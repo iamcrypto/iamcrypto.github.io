@@ -116,7 +116,7 @@ $(function() {
 
   function cleanUpData(patents) {
     var toRemove = [];
-    var cutoffDate = new Date(2005, 4, 16);
+    var cutoffDate = new Date(2005, 4, 9);
     for (var i = 0; i < patents.length; i++) {
       if (parseDate(patents[i]["Date"]) > cutoffDate) toRemove.push(patents[i]);
     }
